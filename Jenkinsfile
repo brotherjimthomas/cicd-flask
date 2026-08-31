@@ -4,7 +4,7 @@ pipeline {
         stage('Clone Code') {
             steps {
                 // Replace with your GitHub repository URL
-                git branch: 'main', url: '[https://github.com/brotherjimthomas/cicd-flask.git](https://github.com/brotherjimthomas/cicd-flask.git)'
+                git branch: 'main', url: 'https://github.com/brotherjimthomas/cicd-flask.git'
             }
         }
         stage('Build Docker Image') {
