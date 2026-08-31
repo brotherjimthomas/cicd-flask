@@ -10,3 +10,8 @@ Step 1) Setup AWS resources via console
 Step 4) GitHub config
     * Dockerfile was amazingly easy to draft - probably due to VSCode extension for docker?
     * Let VSCode install the container extension for the docker-compose.yml file
+
+Step 5) Jenkins goodness!
+    * Trying fix from https://stackoverflow.com/questions/71043828/stderr-fatal-couldnt-find-remote-ref-refs-heads-master
+    This worked but now running into node out of /tmp space (too small)
+    * It's /var/lib/jenkins that is causing the issue... 
