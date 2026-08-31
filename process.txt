@@ -1,0 +1,2 @@
+Step 1) Setup AWS resources via console
+    * Spin up a small EC2 instance
