@@ -15,3 +15,8 @@ Step 5) Jenkins goodness!
     * Trying fix from https://stackoverflow.com/questions/71043828/stderr-fatal-couldnt-find-remote-ref-refs-heads-master
     This worked but now running into node out of /tmp space (too small)
     * It's /var/lib/jenkins that is causing the issue... 
+    Stopped instance. Resized vol to 18G in console. Restarted instance. Seems okay??? Trying pipeline
+    Yup - typo in Jenkinsfile for "git url" line
+    And found issues with missing files! Didn't have any of the "app stuff". Adding now
+        requirements.txt, appy.py, message.sql
+    
