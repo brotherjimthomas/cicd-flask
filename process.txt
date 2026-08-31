@@ -1,2 +1,8 @@
 Step 1) Setup AWS resources via console
-    * Spin up a small EC2 instance
+    * Spin up a small EC2 instance where <user> below is the ami type selected
+        ** Ensure that pem file is chmod 400 and the cmd is "ssh -i /path/to/pem <user>@<ip>
+        ** Idea for future - terraform this!
+    * Jenkins install a bit of a faff from orig, so had to modify using https://www.jenkins.io/doc/book/installing/linux/
+        ** Need to update JDK version to at least 21 (ami has v17) found via "journalctl -u jenkins"
+            ** This was only needed due to install of v17 manually from further up. 
+            "Reverting" via  sudo apt-get install default-jre && sudo apt-get install default-jdk"
