@@ -19,4 +19,13 @@ Step 5) Jenkins goodness!
     Yup - typo in Jenkinsfile for "git url" line
     And found issues with missing files! Didn't have any of the "app stuff". Adding now
         requirements.txt, appy.py, message.sql
-    
+    Jenkins bombing out due to OOM. Added swapfile space 2G
+    It ran but getting a Jinja template failure. And again, due to missing files (correcting now)
+        ../templates/index.html
+
+SUCCESS!    
+
+Final Thoughts
+   This was a great exercise to knock the rust off. With the original project being a bit old, it was good 
+   to get some troubleshooting due to version updates & whatnot. The push/pipeline/debug loop was helpful 
+   and nice to dig into some things.
