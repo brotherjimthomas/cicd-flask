@@ -6,3 +6,7 @@ Step 1) Setup AWS resources via console
         ** Need to update JDK version to at least 21 (ami has v17) found via "journalctl -u jenkins"
             ** This was only needed due to install of v17 manually from further up. 
             "Reverting" via  sudo apt-get install default-jre && sudo apt-get install default-jdk"
+
+Step 4) GitHub config
+    * Dockerfile was amazingly easy to draft - probably due to VSCode extension for docker?
+    * Let VSCode install the container extension for the docker-compose.yml file
